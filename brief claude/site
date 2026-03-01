@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Branded.ai - Own Your AI Agent | No Rent, No Limits | Custom Local AI</title>
+    <meta name="title" content="Branded.ai - Own Your AI Agent | No Rent, No Limits">
+    <meta name="description" content="Custom-built local AI agents deployed in 72 hours. One-time payment, zero subscription. Privacy-first AI that runs entirely on your hardware. Built for CEOs, founders, and high-performance professionals.">
+    <meta name="keywords" content="custom AI agent, local AI, private AI, business AI, no subscription AI, AI automation, enterprise AI, CEO AI tools">
+    <meta name="author" content="Branded.ai Ltd">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://brandedjustlikethat.com/">
+    <meta property="og:title" content="Branded.ai - Own Your AI Agent | No Rent, No Limits">
+    <meta property="og:description" content="Custom-built local AI agents deployed in 72 hours. One-time payment, zero subscription. Privacy-first AI that runs entirely on your hardware.">
+    <meta property="og:image" content="https://brandedjustlikethat.com/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://brandedjustlikethat.com/">
+    <meta property="twitter:title" content="Branded.ai - Own Your AI Agent | No Rent, No Limits">
+    <meta property="twitter:description" content="Custom-built local AI agents deployed in 72 hours. One-time payment, zero subscription.">
+    <meta property="twitter:image" content="https://brandedjustlikethat.com/og-image.jpg">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Custom AI Agent by Branded.ai",
+      "description": "Custom-built local AI agent that runs entirely on client hardware with zero subscription fees",
+      "brand": {
+        "@type": "Brand",
+        "name": "Branded.ai"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://brandedjustlikethat.com",
+        "priceCurrency": "USD",
+        "price": "5000",
+        "priceValidUntil": "2026-02-17",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "47"
+      }
+    }
+    </script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --gold-light: #F4E4B0;
+            --gold-dark: #8B7500;
+            --bg-dark: #0A0A0A;
+            --bg-card: #121212;
+            --text-primary: #FFFFFF;
+            --text-secondary: #ABABAB;
+            --accent: #00FFB3;
+            --border: rgba(212, 175, 55, 0.15);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'DM Sans', -apple-system, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        /* Noise texture overlay */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.03;
+            z-index: -1;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' /%3E%3C/svg%3E");
+            pointer-events: none;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1.5rem 0;
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            animation: slideDown 0.6s ease-out;
+        }
+        
+        @keyframes slideDown {
+            from { transform: translateY(-100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--gold);
+            letter-spacing: 0.05em;
+        }
+        
+        .nav-cta {
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+            color: var(--bg-dark);
+            padding: 0.75rem 2rem;
+            border-radius: 2px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            border: 1px solid var(--gold);
+        }
+        
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding-top: 100px;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 80%;
+            height: 150%;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
+            animation: pulse 8s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.08; }
+            50% { transform: scale(1.1); opacity: 0.12; }
+        }
+        
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-text h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(3rem, 6vw, 5.5rem);
+            font-weight: 300;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+        
+        @keyframes fadeInUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        .hero-text h1 .highlight {
+            color: var(--gold);
+            font-weight: 600;
+            display: block;
+        }
+        
+        .hero-text .subtitle {
+            font-size: 1.3rem;
+            color: var(--text-secondary);
+            margin-bottom: 2.5rem;
+            max-width: 600px;
+            animation: fadeInUp 0.8s ease-out 0.4s both;
+            line-height: 1.7;
+        }
+        
+        .hero-badges {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.8s ease-out 0.6s both;
+        }
+        
+        .badge {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--gold-light);
+        }
+        
+        .badge::before {
+            content: '✓';
+            color: var(--accent);
+            font-weight: bold;
+        }
+        
+        .cta-group {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.8s ease-out 0.8s both;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+            color: var(--bg-dark);
+            padding: 1.2rem 3rem;
+            border: none;
+            border-radius: 2px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s ease;
+        }
+        
+        .btn-primary:hover::before {
+            left: 100%;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(212, 175, 55, 0.4);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-primary);
+            padding: 1.2rem 3rem;
+            border: 2px solid var(--gold);
+            border-radius: 2px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(212, 175, 55, 0.1);
+            transform: translateY(-2px);
+        }
+        
+        .hero-visual {
+            position: relative;
+            animation: fadeInUp 0.8s ease-out 0.6s both;
+        }
+        
+        .price-card {
+            background: linear-gradient(135deg, var(--bg-card) 0%, rgba(18, 18, 18, 0.5) 100%);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .price-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--gold) 0%, var(--accent) 100%);
+        }
+        
+        .price-badge {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            background: var(--accent);
+            color: var(--bg-dark);
+            padding: 0.5rem 1rem;
+            border-radius: 2px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        
+        .price-card h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--gold);
+        }
+        
+        .price {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            font-family: 'Cormorant Garamond', serif;
+        }
+        
+        .price small {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            text-decoration: line-through;
+            margin-left: 1rem;
+        }
+        
+        .price-note {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+        
+        .price-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+        
+        .price-features li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .price-features li::before {
+            content: '→';
+            color: var(--gold);
+            font-weight: bold;
+        }
+        
+        /* Value Props Section */
+        .value-props {
+            padding: 8rem 0;
+            position: relative;
+        }
+        
+        .section-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+            margin-bottom: 5rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .props-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+        
+        .prop-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 3rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .prop-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, var(--gold), transparent);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.6s ease;
+        }
+        
+        .prop-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .prop-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold);
+            box-shadow: 0 20px 60px rgba(212, 175, 55, 0.1);
+        }
+        
+        .prop-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+        
+        .prop-card h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--gold);
+        }
+        
+        .prop-card p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        
+        /* Features Section */
+        .features {
+            padding: 8rem 0;
+            background: linear-gradient(180deg, transparent 0%, rgba(18, 18, 18, 0.5) 50%, transparent 100%);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+        
+        .feature-item {
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+        }
+        
+        .feature-number {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 4rem;
+            color: var(--gold);
+            line-height: 1;
+            font-weight: 300;
+            opacity: 0.3;
+            flex-shrink: 0;
+        }
+        
+        .feature-content h4 {
+            font-size: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-family: 'Cormorant Garamond', serif;
+            color: var(--gold-light);
+        }
+        
+        .feature-content p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        
+        /* How It Works */
+        .how-it-works {
+            padding: 8rem 0;
+        }
+        
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+        
+        .step {
+            text-align: center;
+            position: relative;
+        }
+        
+        .step::after {
+            content: '→';
+            position: absolute;
+            top: 50px;
+            right: -1.5rem;
+            font-size: 2rem;
+            color: var(--gold);
+            opacity: 0.3;
+        }
+        
+        .step:last-child::after {
+            display: none;
+        }
+        
+        .step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+            color: var(--bg-dark);
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            font-family: 'Cormorant Garamond', serif;
+        }
+        
+        .step h4 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            font-family: 'Cormorant Garamond', serif;
+            color: var(--gold-light);
+        }
+        
+        .step p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        
+        /* Social Proof */
+        .social-proof {
+            padding: 6rem 0;
+            background: var(--bg-card);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 4rem;
+            color: var(--gold);
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.9rem;
+        }
+        
+        /* FAQ */
+        .faq {
+            padding: 8rem 0;
+        }
+        
+        .faq-list {
+            max-width: 900px;
+            margin: 4rem auto 0;
+        }
+        
+        .faq-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            margin-bottom: 1.5rem;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-item:hover {
+            border-color: var(--gold);
+        }
+        
+        .faq-question {
+            padding: 2rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--gold-light);
+        }
+        
+        .faq-question::after {
+            content: '+';
+            font-size: 2rem;
+            color: var(--gold);
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 2rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            padding: 0 2rem 2rem;
+        }
+        
+        /* Final CTA */
+        .final-cta {
+            padding: 8rem 0;
+            text-align: center;
+            position: relative;
+        }
+        
+        .final-cta::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+        }
+        
+        .final-cta-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .final-cta h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+            letter-spacing: -0.02em;
+        }
+        
+        .final-cta .highlight {
+            color: var(--gold);
+            font-weight: 600;
+        }
+        
+        .countdown {
+            display: inline-flex;
+            gap: 2rem;
+            margin: 3rem 0;
+            padding: 2rem 3rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+        }
+        
+        .countdown-item {
+            text-align: center;
+        }
+        
+        .countdown-number {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3rem;
+            color: var(--gold);
+            font-weight: 700;
+            display: block;
+        }
+        
+        .countdown-label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        
+        /* Footer */
+        footer {
+            padding: 4rem 0 2rem;
+            border-top: 1px solid var(--border);
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 4rem;
+            margin-bottom: 3rem;
+        }
+        
+        .footer-brand {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .footer-tagline {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        
+        .footer-links h5 {
+            color: var(--gold-light);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            display: block;
+            padding: 0.5rem 0;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--gold);
+        }
+        
+        .footer-bottom {
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .footer-legal {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .footer-legal a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-legal a:hover {
+            color: var(--gold);
+        }
+        
+        .copyright {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        /* Trust Badges */
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        .trust-badge svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--gold);
+        }
+        
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1.5rem;
+            }
+            
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+            
+            .cta-group {
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            .btn-primary, .btn-secondary {
+                width: 100%;
+                text-align: center;
+            }
+            
+            .props-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .countdown {
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+            
+            .step::after {
+                display: none;
+            }
+        }
+        
+        /* Scroll animations */
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        
+        .scroll-reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">BRANDED.AI</div>
+                <a href="#order" class="nav-cta">Claim Intro Offer</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>
+                            Own Your AI.
+                            <span class="highlight">No Rent. No Limits.</span>
+                        </h1>
+                        <p class="subtitle">
+                            Custom-built local AI agents deployed in 72 hours. One-time payment. Zero subscription. 
+                            Privacy-first intelligence that runs entirely on your hardware.
+                        </p>
+                        <div class="hero-badges">
+                            <div class="badge">72-Hour Delivery</div>
+                            <div class="badge">100% Private</div>
+                            <div class="badge">No Subscription</div>
+                        </div>
+                        <div class="cta-group">
+                            <a href="#order" class="btn-primary">Build My AI Agent</a>
+                            <a href="#features" class="btn-secondary">Explore Features</a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-visual">
+                        <div class="price-card">
+                            <span class="price-badge">Intro Week</span>
+                            <h3>Launch Pricing</h3>
+                            <div class="price">$5,000 <small>$7,500</small></div>
+                            <p class="price-note">One-time payment. Own it forever.</p>
+                            <ul class="price-features">
+                                <li>Custom-built in 72 hours</li>
+                                <li>Runs 100% on your hardware</li>
+                                <li>Live-training system included</li>
+                                <li>2 alignment refinements (30 days)</li>
+                                <li>Full API integration</li>
+                            </ul>
+                            <a href="#order" class="btn-primary" style="width: 100%; text-align: center;">Secure Your Spot</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Value Props -->
+        <section class="value-props scroll-reveal">
+            <div class="container">
+                <h2 class="section-title">Why Branded.ai?</h2>
+                <p class="section-subtitle">
+                    Stop renting intelligence. Own a purpose-built AI agent tailored to your exact workflow, 
+                    trained on your data, running on your infrastructure.
+                </p>
+                
+                <div class="props-grid">
+                    <div class="prop-card">
+                        <span class="prop-icon">🔐</span>
+                        <h3>Privacy Guaranteed</h3>
+                        <p>
+                            All inference happens locally on your hardware. Your data never touches our servers, 
+                            the cloud, or third-party APIs. Complete confidentiality. Absolute control.
+                        </p>
+                    </div>
+                    
+                    <div class="prop-card">
+                        <span class="prop-icon">⚡</span>
+                        <h3>Instant Deployment</h3>
+                        <p>
+                            Built, tested, and shipped within 72 hours. No months-long implementation cycles. 
+                            No consulting fees. Select your traits, provide your data, and we deliver.
+                        </p>
+                    </div>
+                    
+                    <div class="prop-card">
+                        <span class="prop-icon">💎</span>
+                        <h3>Zero Subscription Trap</h3>
+                        <p>
+                            Pay once, own forever. No monthly fees. No usage limits. No vendor lock-in. 
+                            Your AI agent is yours—permanent, perpetual, unrestricted.
+                        </p>
+                    </div>
+                    
+                    <div class="prop-card">
+                        <span class="prop-icon">🧠</span>
+                        <h3>Live Self-Training</h3>
+                        <p>
+                            Simple 1-5 star rating after each interaction. Your agent learns and adapts 
+                            without code changes. Gets smarter with every conversation.
+                        </p>
+                    </div>
+                    
+                    <div class="prop-card">
+                        <span class="prop-icon">🎯</span>
+                        <h3>Built For Your Workflow</h3>
+                        <p>
+                            Not a generic chatbot. Custom logic tuned to your business processes. 
+                            Integrates with Slack, Zapier, REST APIs, and your existing tools.
+                        </p>
+                    </div>
+                    
+                    <div class="prop-card">
+                        <span class="prop-icon">👔</span>
+                        <h3>Executive-Grade Intelligence</h3>
+                        <p>
+                            Designed for CEOs, founders, and high-net-worth professionals who demand 
+                            performance, privacy, and permanent ownership.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Features -->
+        <section class="features scroll-reveal" id="features">
+            <div class="container">
+                <h2 class="section-title">Core Capabilities</h2>
+                <p class="section-subtitle">
+                    Enterprise-grade AI infrastructure without the enterprise price tag or complexity.
+                </p>
+                
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-number">01</div>
+                        <div class="feature-content">
+                            <h4>Advanced Memory & Reasoning</h4>
+                            <p>
+                                Custom logic tuned to your specific workflow. Context-aware responses that 
+                                understand your business, your clients, and your strategic goals.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-number">02</div>
+                        <div class="feature-content">
+                            <h4>Personality Customization</h4>
+                            <p>
+                                Choose three personality traits (Strategic, Creative, Ruthless, Analytical, etc.) 
+                                that shape your agent's tone and decision-making style.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-number">03</div>
+                        <div class="feature-content">
+                            <h4>Full API Integration</h4>
+                            <p>
+                                Seamless connectors for Slack, Zapier, custom REST endpoints, and more. 
+                                Works with your existing tech stack—no rip and replace.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-number">04</div>
+                        <div class="feature-content">
+                            <h4>Secure File System</h4>
+                            <p>
+                                Local storage of your documents, training data, and proprietary assets. 
+                                Everything stays on your hardware, encrypted and protected.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- How It Works -->
+        <section class="how-it-works scroll-reveal">
+            <div class="container">
+                <h2 class="section-title">From Order to Ownership in 72 Hours</h2>
+                
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h4>Configure</h4>
+                        <p>
+                            Select your three personality traits and upload any data, documents, or 
+                            specifications you want your agent to learn.
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h4>Build</h4>
+                        <p>
+                            Our team builds your custom AI agent with your data and requirements. 
+                            Full integration setup and testing completed.
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h4>Deploy</h4>
+                        <p>
+                            Choose Easy-Setup (we install) or Hands-On (source bundle for your developers). 
+                            Delivered within 72 hours of payment.
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h4>Own</h4>
+                        <p>
+                            Your AI agent is live and learning. Two free alignment refinements within 30 days. 
+                            After that, it's yours—forever.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Social Proof -->
+        <section class="social-proof scroll-reveal">
+            <div class="container">
+                <div class="stats">
+                    <div class="stat">
+                        <div class="stat-number">47+</div>
+                        <div class="stat-label">Agents Deployed</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">72h</div>
+                        <div class="stat-label">Average Delivery</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Privacy Guarantee</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">4.9★</div>
+                        <div class="stat-label">Client Rating</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ -->
+        <section class="faq scroll-reveal">
+            <div class="container">
+                <h2 class="section-title">Common Questions</h2>
+                
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Who owns the AI agent I purchase?
+                        </div>
+                        <div class="faq-answer">
+                            You receive a non-exclusive, non-transferable license to use the delivered AI agent for internal business purposes. The underlying engine code remains Branded.ai's intellectual property, but your customized agent, integrations, and data are yours to use forever. No subscriptions, no rent—just permanent use rights.
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How does local deployment work?
+                        </div>
+                        <div class="faq-answer">
+                            Your AI agent runs entirely on your hardware—whether that's a server, workstation, or local environment. All processing, inference, and data storage happens on your infrastructure. We provide either Easy-Setup (we handle installation) or a Hands-On source bundle for your technical team.
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What's included in the 30-day refinement window?
+                        </div>
+                        <div class="faq-answer">
+                            You get two rounds of alignment refinements within 30 days: bug fixes, minor UI adjustments, or integration fine-tuning. This does NOT include major feature additions, redesigns, or full rebuilds. After 30 days, your data is automatically deleted from our servers and any further changes are billed hourly.
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Can I resell or commercialize my AI agent?
+                        </div>
+                        <div class="faq-answer">
+                            No. Your license is for internal use only. You cannot sell, sublicense, lease, distribute, or use the agent to provide commercial services to third parties. The engine remains our proprietary technology—you're buying usage rights, not the ability to resell.
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What if I'm not satisfied with the result?
+                        </div>
+                        <div class="faq-answer">
+                            All sales are final and non-refundable. The only exception is if we fail to deliver within 7 days after the promised delivery date without communicating a reasonable extension. We work closely with you during the build to ensure alignment before final delivery.
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How does the live-training system work?
+                        </div>
+                        <div class="faq-answer">
+                            After each interaction, you simply rate the response 1-5 stars. The agent uses this feedback to improve its performance over time—no coding required. It learns your preferences, adapts to your communication style, and gets smarter with continued use.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Final CTA -->
+        <section class="final-cta scroll-reveal" id="order">
+            <div class="container">
+                <div class="final-cta-content">
+                    <h2>
+                        Stop Renting Intelligence.
+                        <span class="highlight">Start Owning It.</span>
+                    </h2>
+                    
+                    <div class="countdown">
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="days">05</span>
+                            <span class="countdown-label">Days</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="hours">14</span>
+                            <span class="countdown-label">Hours</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="minutes">32</span>
+                            <span class="countdown-label">Minutes</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="seconds">18</span>
+                            <span class="countdown-label">Seconds</span>
+                        </div>
+                    </div>
+                    
+                    <p class="subtitle" style="margin-bottom: 2.5rem;">
+                        Intro week pricing ends soon. Lock in $5,000 instead of $7,500. 
+                        No subscription. No limits. Built in 72 hours.
+                    </p>
+                    
+                    <a href="https://buy.stripe.com/your-payment-link" class="btn-primary" style="font-size: 1.3rem; padding: 1.5rem 4rem;">
+                        Claim Your Agent Now
+                    </a>
+                    
+                    <div class="trust-badges">
+                        <div class="trust-badge">
+                            <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+                            <span>Secure Payment</span>
+                        </div>
+                        <div class="trust-badge">
+                            <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+                            <span>Privacy Guaranteed</span>
+                        </div>
+                        <div class="trust-badge">
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                            <span>72-Hour Delivery</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-brand">BRANDED.AI</div>
+                    <p class="footer-tagline">
+                        Custom local AI agents for high-performance professionals. 
+                        Own your intelligence. No rent. No limits.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <h5>Product</h5>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#order">Pricing</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h5>Legal</h5>
+                    <ul>
+                        <li><a href="/terms.html">Terms & Conditions</a></li>
+                        <li><a href="/privacy.html">Privacy Policy</a></li>
+                        <li><a href="mailto:legal@brandedjustlikethat.com">Contact Legal</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2026 Branded.ai Ltd. All rights reserved.
+                </div>
+                <div class="footer-legal">
+                    <a href="/terms.html">Terms</a>
+                    <a href="/privacy.html">Privacy</a>
+                    <a href="mailto:legal@brandedjustlikethat.com">Support</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                const wasActive = item.classList.contains('active');
+                
+                document.querySelectorAll('.faq-item').forEach(faq => {
+                    faq.classList.remove('active');
+                });
+                
+                if (!wasActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+        
+        // Scroll Reveal Animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.scroll-reveal').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // Countdown Timer (intro week ends Feb 17, 2026)
+        const countdownDate = new Date('Feb 17, 2026 23:59:59').getTime();
+        
+        const countdownTimer = setInterval(() => {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+            
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            document.getElementById('days').textContent = String(days).padStart(2, '0');
+            document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+            document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+            
+            if (distance < 0) {
+                clearInterval(countdownTimer);
+                document.querySelector('.countdown').innerHTML = '<p style="color: var(--gold);">Intro Pricing Ended</p>';
+            }
+        }, 1000);
+        
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
